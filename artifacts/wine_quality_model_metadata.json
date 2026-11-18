@@ -1,0 +1,43 @@
+{
+  "model": "RandomForestRegressor",
+  "target": "quality",
+  "input_features": [
+    "fixed_acidity",
+    "volatile_acidity",
+    "citric_acid",
+    "residual_sugar",
+    "chlorides",
+    "free_sulfur_dioxide",
+    "total_sulfur_dioxide",
+    "density",
+    "pH",
+    "sulphates",
+    "alcohol",
+    "color"
+  ],
+  "categorical_features": [
+    "color"
+  ],
+  "training_rows": 5197,
+  "held_out_test_rows": 1300,
+  "training_cv_mae": 0.528,
+  "held_out_test_metrics": {
+    "MAE": 0.518,
+    "RMSE": 0.673,
+    "R2": 0.405
+  },
+  "held_out_metrics_source": "wine_quality.ipynb Step 10; reported, not recomputed by this export script",
+  "random_forest_parameters": {
+    "n_estimators": 400,
+    "max_features": 0.5,
+    "min_samples_leaf": 1,
+    "max_samples": 0.9,
+    "max_depth": null,
+    "random_state": 42
+  },
+  "python_version": "3.11.9",
+  "numpy_version": "2.4.6",
+  "pandas_version": "3.1.0",
+  "scikit_learn_version": "1.9.1",
+  "joblib_version": "1.6.0"
+}
